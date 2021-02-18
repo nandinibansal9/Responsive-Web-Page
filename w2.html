@@ -1,0 +1,303 @@
+<html>
+<head>
+<title>HOMEPAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <style>
+     .carousel-indicators li
+	 {height:10px;
+	  width:10px;
+	  border-radius:100%;
+	 }
+	 .overlay2:hover .image 
+	 {
+	  opacity: 0.3;
+     }
+	 
+body {
+  <!--background-color: #f1f1f1;-->
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.c {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+</style>
+</head>
+<body style="background-color:#FBF7F7">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">	
+	<form class="form-inline">
+		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+		<button class="btn btn-success" type="submit">Search</button>&nbsp
+		<a href="G:\subjects\java\projects\website\w2.html" class="btn btn-success" role="button">Home</a>&nbsp
+		<a href="G:\subjects\java\projects\website\contact.html?fname=&lname=&mail=&sub=&msg=" class="btn btn-success"  role="button">Contact</a>&nbsp
+		<!--<a href="G:\subjects\java\projects\website\about.html?fname=&lname=&mail=&sub=&msg=" class="btn btn-success"  role="button">About</a>&nbsp-->
+
+</nav>
+<div class="modal modal-fade" id="myymodal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">REVIEW</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	
+				<div class="modal-body"><form>
+					<div class="form-group">
+						<label>Review Title</label>
+						<input type="text" name="abc" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Message</label>
+						<textarea rows="5" type="text" name="def" class="form-control" placeholder="Write your message here...."></textarea>
+					</div></form>
+				</div>	
+				<div class="modal-footer justify-content-center">
+					<button type="submit" class="btn btn-dark" data-dismiss="modal">Submit</button>
+				</div>	
+			</div>
+		</div>
+</div><br><center>
+<div class="carousel slide carousel-fade" id="mycarousel" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="G:\subjects\java\projects\website\car9.jpg" class="c" alt="flower1" width="100%" height="100%">
+				<div class="text-block">
+					<h2 align="right">Nature</h2>
+					<h4>Love the sight of a beautiful sunrise!</h4>
+				</div>
+				<div class="carousel-caption">
+				</div>	
+			</div>
+			<div class="carousel-item">
+				<img src="G:\subjects\java\projects\website\car10.jpg" class="c" alt="flower2" width="100%" height="100%">
+				<div class="text-block">
+					<h2 align="right">Drift</h2>
+					<p><font size="5">Let your dreams take flight!</font></p>
+				</div>
+				<div class="carousel-caption">
+				</div>	
+			</div>
+			<div class="carousel-item">
+				<img src="G:\subjects\java\projects\website\car4.jpg" class="c" alt="flower5" width="100%" height="100%">
+				<div class="text-block">
+					<h2 align="right">Peace</h2>
+					<p><font size="5">Be lost and found at the same time!</font></p>
+				</div>
+				<div class="carousel-caption">
+				</div>	
+			</div>
+			<div class="carousel-item">
+				<img src="G:\subjects\java\projects\website\i3.jpg"  class="c" alt="flower3" width="100%" height="100%">
+				<div class="text-block">
+					<h4>Travel</h4>
+					<p>See as far as you can!</p>
+				</div>
+				<div class="carousel-caption">
+				</div>	
+			</div>
+			<ul class="carousel-indicators">
+				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#mycarousel" data-slide-to="1" ></li>
+				<li data-target="#mycarousel" data-slide-to="2" ></li>
+				<li data-target="#mycarousel" data-slide-to="3" ></li>
+			</ul>
+			<a href="#mycarousel" data-slide="next" class="carousel-control-next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+			<a href="#mycarousel" data-slide="prev" class="carousel-control-prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+		</div>
+</div></center>
+
+<div class="col">
+		<p><font face="Bahnschrift SemiBold" size="5" color="#9B1014">
+		<center>It’s time to get out of your homes and get the opportunity to reflect your life. One of the best ways to learn more</center>
+		<center>about self is to travel. To imagine how different life is in another place,go and check it out. Learn new</center>
+		<center>languages, cultures, cuisines or a deeper appreciation of faith or spirituality. Crave for new experiences and challenges.</center>
+		<center>Make new friends, deepen the bonds and your relations with loved ones. Take a break, explore yourself, strengthen your reltions.</center>
+		<center><b>Relax,rejuvenate and celebrate your life.</b></center></font>
+</div>
+<br><br><center>
+<div class="container">
+	<div class="row" style="background-color:#C6C4C4;">
+  <div class="col-sm-4">
+    <div class="content">
+      <a href="G:\subjects\java\projects\website\solo.html"><img src="G:\subjects\java\projects\website\solo.jpg" alt="Mountains" style="width:100%"></a>
+      <h3>Be a brave endeavor</h3>
+      <p>
+			Listen to your gut and control what direction you want to head.
+			Reflect your decisions and discover more about what makes you, you.
+			Spending some time in solitude, allow yourself to embark on an inward journey of self-discovery.
+	  </p> 
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="content">
+      <a href="file:///G:\subjects\java\projects\website/friends.html"><img src="G:\subjects\java\projects\website\family.jpeg" alt="Lights" style="width:100%"></a>
+      <h3>Explore with your Family</h3>
+		<p>
+			Listen to your gut and control what direction you want to head.
+			Reflect your decisions and discover more about what makes you, you.
+			Spending some time in solitude, allow yourself to embark on an inward journey of self-discovery.
+		</p>
+	</div>
+  </div>
+  <div class="col-sm-4">
+    <div class="content">
+    <a href="file:///G:\subjects\java\projects\website/friends.html"><img src="G:\subjects\java\projects\website\friends.jpg" alt="Nature" style="width:100%"></a>
+      <h3>Journey with Friends</h3>
+		<p>
+		    Take selfies of ridiculous poses, act childish, act weird, bring out the wild person in you.
+			Engage in activities like camping, rafting, trekking etc..
+			Uncover the destinations, garner your insights. Be restless, go beyond borders and make unforgettable memories.
+		</p>
+	</div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+</div>	
+<div class="container">
+	<div class="row" style="background-color:#C6C4C4;">
+  <div class="col-sm-4">
+    <div class="content">
+      <a href="G:\subjects\java\projects\website\summer.html"><img src="G:\subjects\java\projects\website\sum1.jpg" alt="Mountains" style="width:100%"></a>
+      <h3>Wanna have Sun!</h3>
+	  <p>
+		Summer comes with a tantalizing feeling of possibility. School is out and everyone in the office is
+		bursting to get outside to soak up some sunshine. Quit saying “maybe next summer” and check out these very important reasons why you should make 2019 your summer of travel!
+	  </p>	
+	  </div>
+  </div>
+  
+  <div class="col-sm-4">
+    <div class="content">
+    <a href="G:\subjects\java\projects\website\winter.html"><img src="G:\subjects\java\projects\website\win1.jpg" alt="Nature" style="width:95%"></a>
+      <h3>Chilling Vacations</h3>
+      <p>
+		Imagine strolling around avenues with a glass of wine in-hand, surrounded by fairy 
+		lights, with the scent of a hog roast wafting by. Christmas markets are one of the greatest joys of 
+		travelling in winter. They are the tangible representation of everything warm, cosy, and inviting about the festive season.
+	  </p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="content">
+    <a href="G:\subjects\java\projects\website\monsoon.html"><img src="G:\subjects\java\projects\website\mon1.jpg" alt="Mountains" style="width:100%"></a>
+      <h3>Romance in Monsoon</h3>
+      <p>
+		Monsoons are romantic and add it with royal history, you will have cherished memories.
+		Nature comes to life, forests and rivers swell with activity. Connect with the locals and experience more authenticity.
+		Get the advantage of off-season costs and explore the best gems of india in moonsoon.
+	  </p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</div>	</center>
+<center><a href="G:\subjects\java\projects\website\review.html" class="btn btn-dark" role="button">Show All Reviews</a></button>
+<button class="btn btn-dark" data-target="#myymodal" data-toggle="modal">Leave a Review</button></center><br><br>
+	
+	<div class="modal modal-fade" id="myymodal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">REVIEW</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	
+				<div class="modal-body"><form>
+					<div class="form-group">
+						<label>Review Title</label>
+						<input type="text" name="abc" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Message</label>
+						<input type="text" name="def" class="form-control">
+					</div></form>
+				</div>	
+				<div class="modal-footer ">
+					<button type="submit" class="btn btn-dark" data-dismiss="modal">Submit</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!--<div class="overlay2">
+		<img src="H:\images\flowers\i3.jpg" alt="flower3" width="100%" height="100%">
+	</div>
+	<div class="overlay2">
+		<img class="" src="H:\images\flowers\i3.jpg" alt="slider" width="100%" height="100%">
+	</div>-->
+	</body>
+	</html>
